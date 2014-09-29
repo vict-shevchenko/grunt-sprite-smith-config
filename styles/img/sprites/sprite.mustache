@@ -1,0 +1,17 @@
+.i{{items.0.category}}
+{{#items}}
+	,.i-{{name}}
+{{/items}}{
+	display: inline-block;
+	background: url('{{{items.0.escaped_image}}}') no-repeat;
+}
+
+{{#items}}
+.i-{{name}} {
+	background-position: {{px.offset_x}} {{px.offset_y}};
+	width: {{px.width}};
+	height: {{px.height}};
+}
+
+{{/items}}
+
